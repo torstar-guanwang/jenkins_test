@@ -1,0 +1,9 @@
+FROM python:2.7
+
+RUN pip install BeautifulSoup
+RUN mkdir /workspace
+WORKDIR /workspace
+
+COPY simple_script.py /workspace
+
+CMD python simple_script.py
